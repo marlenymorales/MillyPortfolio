@@ -1,0 +1,361 @@
+
+html {
+  padding: env(safe-area-inset);
+}
+
+html, body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+.text-nuno {
+  color: #ffba01;
+}
+
+.offset:before {
+  content: "";
+  display: block;
+  height: 4.05rem;
+  margin-top: -4.05rem;
+}
+
+[class*="col-"] {
+  padding: 1rem;
+}
+
+a:focus,
+button:focus {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+a, .btn, button {
+   cursor: pointer!important;
+   transition: all .4s ease;
+}
+
+.navbar {
+  padding: .7rem 1rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  transition: background-color .5s ease 0s;
+}
+.navbar-brand img {
+  height: 2rem;
+}
+.custom-toggler-icon {
+  color: white;
+  font-size: 1.6rem;
+}
+.navbar-nav li {
+  padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+  color: #152238;
+  padding-top: .8rem;
+  transition: all .4s ease;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #ffba01;
+  transition: all .4s ease;
+}
+.navbar.solid,
+.navbar.solid-toggle {
+  background: rgba(0, 0, 0, 0.7)!important;
+  transition: background-color 1s ease 0s;
+}
+
+.parallax-home {
+  height: 100vh;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%; 
+  z-index: 1;
+}
+.caption h1 {
+  font-size: 4.5rem;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2.5rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 2rem;
+}
+.btn-lg {
+  border-width: medium;
+  padding: .8rem 1.5rem;
+  font-size: 1.1rem;
+  color: #ffba01;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+}
+a.down-arrow .svg-inline--fa {
+  color: navy;
+  font-size: 2.2rem;
+  opacity: .3;
+}
+a.down-arrow .svg-inline--fa:hover {
+  opacity: .8;
+}
+
+.btn-sm {
+  border-width: medium;
+  border-radius: 0;
+  padding: .5rem 1.1rem;
+  font-size: .9rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.btn-nuno {
+  border-color: #ffba01;
+  background-color: #ffba01;
+  color: white;
+}
+.btn-nuno:hover,
+.btn-nuno:focus {
+  border-color: #ffba01;
+  background-color: #ffba01;
+  color: white;
+}
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #ffba01;
+  margin: 0 auto 2rem;
+}
+.feature span {
+  color: #ffba01;
+  margin-bottom: .6rem;
+}
+.feature h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+
+.dark-background {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000!important;
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.3);
+  cursor: zoom-in;
+}
+.portfolio-item img {
+  transition: transform .4s ease;
+}
+
+.footer {
+  background: url('../img/footer/footer.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+}
+.footer .row.outer {
+  background-color: rgba(57, 63, 70, 0.85);
+  padding: 1rem 1rem 1rem;
+}
+.footer img {
+  height: 2rem;
+  margin: 1.5rem 0;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer ul.social {
+  float: left;
+}
+.footer .social a:hover {
+  color: #ffba01!important;
+}
+.footer h3 {
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+
+input.btn {
+  cursor: pointer;
+}
+.controls input:focus,
+.controls textarea:focus { 
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+hr.socket {
+  border-top: .2rem solid #666b71;
+  width: 100%;
+}
+
+.top-scroll svg.svg-inline--fa {
+  font-size: 3rem;
+  height: 1.7rem;
+  color: #53595f;
+  background: white;
+}
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .3;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: .5;
+}
+
+@media (max-width: 991.98px) {
+  .caption h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    padding-bottom: .8rem;
+  }
+  .caption h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1.7rem;
+  }
+  .btn-lg {
+    padding: .7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .clients img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .parallax-home {
+    height: 100vh;
+    min-height: 500px;
+  }
+  .caption h1 {
+    font-size: 2.7rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: .6rem 1.1rem;
+    font-size: 1rem;
+  }
+  #features h1 {
+    font-size: 2rem;
+  }
+  .fixed-dark {
+    background-image: url('IMG_2189.jpg');
+  }
+  .fixed-light {
+    background-image: url('../img/fixed/office-mobile.jpg');
+  }
+  .footer {
+    background: url('../img/footer/footer-mobile.jpg') no-repeat;
+  }
+  .top-scroll {
+    display: none!important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .caption h1 {
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+    padding-bottom: .4rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .btn-lg {
+    padding: .4rem .9rem;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+.os-animation{
+  opacity: 0;
+  margin: 0!important;
+  max-width: 100%;
+}
+.os-animation.animated {
+  opacity: 1;
+}
+
+.parallax-container {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 15px;
+  position: relative;
+  width: 100%
+}
+.parallax-container .parallax-content {
+  margin: 0 auto;
+  width: 100%;
+}
+.parallax__container {
+  clip: rect(0, auto, auto, 0);
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100
+}
+.parallax__container .parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100%
+}
